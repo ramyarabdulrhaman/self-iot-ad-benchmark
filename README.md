@@ -101,7 +101,7 @@ self-iot-ad-benchmark/
 Clone the repository and install required packages:
 
 ```bash
-git clone https://github.com/ramyarteimoor/self-iot-ad-benchmark.git
+git clone https://github.com/ramyarabdulrhaman/self-iot-ad-benchmark.git
 cd self-iot-ad-benchmark
 python -m venv venv
 # On Windows:

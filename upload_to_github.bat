@@ -13,7 +13,7 @@ git push -u origin main --force
 echo =======================================================
 if %ERRORLEVEL% equ 0 (
     echo SUCCESS! Your benchmark repository has been uploaded to GitHub!
-    echo Visit: https://github.com/ramyarteimoor/self-iot-ad-benchmark
+    echo Visit: https://github.com/ramyarabdulrhaman/self-iot-ad-benchmark
 ) else (
     echo.
     echo If push failed due to authentication, please log in with your GitHub Personal Access Token or Browser.

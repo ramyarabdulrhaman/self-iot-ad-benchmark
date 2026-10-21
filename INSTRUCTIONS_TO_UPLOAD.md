@@ -1,6 +1,6 @@
 # Step-by-Step Instructions to Upload This Repository to GitHub
 
-This guide walks you through uploading the `self-iot-ad-benchmark` folder to your GitHub account (`https://github.com/ramyarteimoor/self-iot-ad-benchmark`).
+This guide walks you through uploading the `self-iot-ad-benchmark` folder to your GitHub account (`https://github.com/ramyarabdulrhaman/self-iot-ad-benchmark.git`).
 
 ---
 
@@ -42,7 +42,7 @@ git commit -m "Initial release: Leakage-free benchmark of SSL and SSL-consistenc
 git branch -M main
 
 # 5. Connect your local repository to your GitHub remote repository
-git remote add origin https://github.com/ramyarteimoor/self-iot-ad-benchmark.git
+git remote add origin https://github.com/ramyarabdulrhaman/self-iot-ad-benchmark.git
 
 # 6. Push your code to GitHub
 git push -u origin main
@@ -91,7 +91,7 @@ gh repo create self-iot-ad-benchmark --public --source=. --remote=origin --push
 ## ✅ Verification Checklist After Upload
 
 Once pushed, visit your repository page:
-👉 **[https://github.com/ramyarteimoor/self-iot-ad-benchmark](https://github.com/ramyarteimoor/self-iot-ad-benchmark)**
+👉 **[https://github.com/ramyarabdulrhaman/self-iot-ad-benchmark.git](https://github.com/ramyarabdulrhaman/self-iot-ad-benchmark.git)**
 
 Check the following:
 1. [x] **README.md** renders properly with author details, affiliations, ORCID badge, abstract, and results table.
@@ -107,6 +107,6 @@ Check the following:
 To obtain a permanent DOI (Digital Object Identifier) for your code repository to include in journal camera-ready papers:
 1. Go to [https://zenodo.org](https://zenodo.org) and sign in with your GitHub account.
 2. Navigate to your Zenodo GitHub settings: [https://zenodo.org/account/settings/github/](https://zenodo.org/account/settings/github/).
-3. Flip the switch next to `ramyarteimoor/self-iot-ad-benchmark` to **ON**.
+3. Flip the switch next to `ramyarabdulrhaman/self-iot-ad-benchmark` to **ON**.
 4. On GitHub, create a new Release (e.g. `v1.0.0`).
 5. Zenodo will automatically archive the repository and mint a citable DOI (e.g., `10.5281/zenodo.XXXXXXX`).
