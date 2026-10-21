@@ -153,22 +153,6 @@ python code/visualize_results.py
 
 ---
 
-## 📜 Citation
-
-If you use this benchmark, code, or audited data splits in your research, please cite:
-
-```bibtex
-@article{teimoor2026leakage,
-  author    = {Teimoor, Ramyar A.},
-  title     = {A Leakage-Free Benchmark of Self-Supervised and Semi-Supervised Representation Learning for {IoT} Intrusion Detection Under Label Scarcity},
-  journal   = {IEEE Transactions on Dependable and Secure Computing},
-  year      = {2026},
-  note      = {Under Review}
-}
-```
-
----
-
 ## 📄 License
 
 This repository is licensed under the [MIT License](LICENSE).
