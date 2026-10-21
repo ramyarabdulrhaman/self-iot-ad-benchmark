@@ -1,0 +1,10 @@
+Partition,Total Flows,Benign (Class 0),Attack (Class 1),Attack Ratio (%),Partition Role
+Full Deduplicated Telemetry,17710,11839,5871,33.15%,Full curated experimental corpus
+Self-Supervised Pretrain Pool,12397,8287,4110,33.15%,70% training pool (unlabeled pretext learning)
+Extreme Low-Label (0.5%),61,41,20,32.79%,Extreme few-shot budget (61 flows)
+Target Low-Label (1.0%),123,82,41,33.33%,Primary few-shot budget (123 flows)
+Moderate Low-Label (2.0%),247,165,82,33.20%,Supervised fine-tuning budget (247 flows)
+Standard Semi-Supervised (5.0%),619,414,205,33.12%,Standard semi-supervised budget (619 flows)
+Upper Bound Labeled (10.0%),1239,828,411,33.17%,"Supervised upper-bound budget (1,239 flows)"
+Validation Partition,1771,1184,587,33.15%,10% held-out model selection and early stopping
+Independent Test Evaluation,3542,2368,1174,33.15%,20% held-out out-of-sample evaluation

@@ -1,0 +1,15 @@
+Hyperparameter,Pretext Value,Fine-Tuning Value,Description
+Feature Dimension D,21,21,Continuous flow statistics dimension
+Latent Embedding Dimension d,64,64,Bottleneck representation space
+Projection Head Dimension d_proj,32,Unmounted,Normalized hyperspherical contrastive space
+Batch Size B,256,32 (L) / 256 (U),Mini-batch size for optimization
+Optimizer,AdamW,AdamW,Adaptive gradient optimizer with decoupled weight decay
+Learning Rate,1e-3,5e-4,Optimization step size
+Weight Decay,1e-4,1e-4,Decoupled L2 regularization parameter
+Corruption Probability rho,0.30,0.30,Bernoulli column-wise marginal permutation rate
+Contrastive Temperature tau,0.15,N/A,InfoNCE temperature scaling parameter
+Contrastive Loss Weight lambda_c,1.0,N/A,Weight of InfoNCE in pretext objective
+Teacher EMA Momentum alpha,N/A,0.996,Exponential moving average update coefficient
+Confidence Threshold tau_conf,N/A,0.85,Teacher pseudo-label confidence cutoff threshold
+Consistency Regularizer beta,N/A,1.0,Semi-supervised consistency loss scale
+Focal Loss Parameter gamma,N/A,2.0,Class-imbalance focusing exponent

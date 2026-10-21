@@ -1,0 +1,8 @@
+Configuration,Macro-F1 (%),Delta vs Full (pp),Impact Summary
+Full Self IoT AD,84.59 +/- 4.61,+0.00,Baseline reference
+wo SSL Pretraining,83.51 +/- 6.74,-1.08,Degradation without component
+wo InfoNCE Contrastive,83.96 +/- 3.94,-0.63,Degradation without component
+wo Reconstruction Decoder,85.44 +/- 6.12,+0.85,Positive gain (component removal beneficial)
+wo Teacher Consistency,92.08 +/- 1.33,+7.49,Positive gain (component removal beneficial)
+Gaussian Noise Instead Of Permutation,88.04 +/- 2.28,+3.45,Positive gain (component removal beneficial)
+BCE Loss Instead Of Focal,82.27 +/- 5.72,-2.32,Degradation without component

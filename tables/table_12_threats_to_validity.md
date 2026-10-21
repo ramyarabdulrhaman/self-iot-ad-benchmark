@@ -1,0 +1,8 @@
+| Validity Category    | Potential Risk / Confound                   | Mitigation Strategy                                                                                                      |
+|:---------------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
+| Internal Validity    | Data leakage across identical flow bursts   | Deduplicated all 123k raw records into 17,710 unique flows; reduced duplicate leakage rate from 76.06% to 0.45%          |
+| Internal Validity    | Capacity confound across deep architectures | Capacity-matched supervised MLP to exact 13,569 parameter architecture; calibrated losses with BCE to prevent collapse   |
+| Internal Validity    | Validation set label budget leakage         | Employed budget-matched validation subsets (<= 100 flows) for low-label checkpointing                                    |
+| Construct Validity   | Inverted ground-truth anomaly mapping       | Mapped legitimate IoT operational telemetry (ThingSpeak, MQTT, Wipro) to Class 0, and cyberattacks to Class 1            |
+| Statistical Validity | Small sample size non-parametric bounds     | Scaled evaluation to N = 20 independent randomized repetitions with exact Wilcoxon tests and Holm-Bonferroni corrections |
+| External Validity    | Single testbed telemetry distribution       | Documented testbed topology and identified cross-dataset transfer (Edge-IIoTset, TON_IoT) as primary future work         |

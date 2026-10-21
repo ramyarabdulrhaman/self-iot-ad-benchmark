@@ -1,0 +1,18 @@
+Symbol,Semantic Definition,Domain,Baseline Value
+D,Telemetry feature input dimensionality,N,21
+d,Latent bottleneck representation dimension,N,64
+d_proj,Normalized contrastive projection space dimension,N,32
+rho,Bernoulli feature marginal corruption probability,(0 1),0.30
+m,Stochastic binary feature mask vector,{0 1}^D,m ~ Bern(1-rho)
+pi_j,Column-wise random permutation index operator,S_B,Uniform permutation
+tau,InfoNCE temperature scaling hyperparameter,R+,0.15
+lambda_c,Contrastive loss balancing weighting coefficient,R+,1.0
+gamma,Class-balanced focal loss focusing exponent,R+,2.0
+alpha_t,Prior skew weighting factor (N_benign / N_total),(0 1),0.6685
+alpha,Teacher EMA momentum update coefficient,(0 1),0.996
+tau_conf,Teacher soft pseudo-label confidence cutoff,(0 1),0.85
+beta,Teacher-student consistency loss weight,R+,1.0
+B,Mini-batch sample size for pretext pretraining,N,256
+B_L / B_U,Mini-batch sizes for labeled and unlabeled flows,N,32 / 128
+E_pre,Pretext pretraining total epoch duration,N,100
+E_fine,Semi-supervised fine-tuning total epoch duration,N,50

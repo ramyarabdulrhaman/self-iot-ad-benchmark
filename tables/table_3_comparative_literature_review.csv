@@ -1,0 +1,10 @@
+Method,Learning Paradigm,Dataset,Label Budget,Main Contribution,Limitation
+"Isolation Forest (Liu et al., 2008)",Unsupervised Tree Cuts,Generic Benchmarks,0% (Unlabeled),Recursive random axis-aligned splits for anomaly isolation,Low recall (<60%) on multi-modal IoT operational flows
+"One-Class SVM (Schölkopf et al., 2001)",Unsupervised Kernel,Generic Benchmarks,0% (Normal only),Enclosing hyperplane support boundary estimation,Poor scaling O(N^2); fails to capture complex multi-modal nominal modes
+"Deep Autoencoder (Zong et al., 2018)",Unsupervised Reconstruction,Network Benchmarks,0% (Normal only),Bottleneck compression with MSE reconstruction residual scoring,High sensitivity to reconstruction thresholds on bursty telemetry
+Random Forest / XGBoost (Breiman / Chen),Supervised Tree Ensembles,Tabular Benchmarks,1% to 5% (123--619),Greedy axis-aligned decision trees with feature sub-sampling,Purely supervised; relies on manual feature engineering
+"VIME (Yoon et al., 2020)",Self-Supervised Tabular,UCI Benchmarks,10% to 30%,Pretext mask estimation and continuous feature reconstruction,Omits contrastive mutual information in latent space
+"SCARF (Bahri et al., 2022)",Tabular Contrastive,UCI Benchmarks,10% to 50%,Random marginal feature corruption for contrastive alignment,Static tabular evaluation; lacks momentum teacher consistency
+"Mean Teacher (Tarvainen & Valpola, 2017)",Semi-Supervised Consistency,CIFAR-10 / SVHN,10% to 20%,Exponential moving average teacher weights for stability,Vision-centric; degrades under severe tabular class skew
+"FixMatch (Sohn et al., 2020)",Semi-Supervised Pseudo-Label,Vision Benchmarks,4--250 labels/class,Thresholded consistency across weak and strong augmentations,Strong tabular corruptions disrupt continuous protocol invariants
+Self-IoT-AD (This Work),Corrupt-Contrastive SSL + Semi-Supervised,RT-IoT2022 (Deduplicated),1% to 5% (123--619 flows),Dual InfoNCE + reconstruction pretext with momentum teacher consistency,Provides stable representations but does not outperform tree models

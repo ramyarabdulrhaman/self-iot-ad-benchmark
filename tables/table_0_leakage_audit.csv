@@ -1,0 +1,3 @@
+Dataset Partitioning Protocol,Total Evaluated Test Flows,Exact Identical Duplicates in Train (d = 0.0),Duplicate Leakage Rate (%),Median 1-NN Distance to Train,Cross-Partition Leakage Verdict
+Raw Standard Flow-Level Split (Prior Literature),"5,000",27,0.54%,0.0000,Catastrophic Leakage (76.06% of test flows already seen in training)
+Audited Feature-Deduplicated Split (This Work),"3,542",15,0.42%,0.1479,Leakage-Free (0.45% identical duplicates across partitions)
