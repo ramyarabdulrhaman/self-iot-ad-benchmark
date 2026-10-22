@@ -5,12 +5,11 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--7016--1833-green.svg)](https://orcid.org/0000-0002-7016-1833)
 
-**Author:** Ramyar A. Teimoor (Corresponding Author)  
-**Affiliations:**  
-1. Department of Computer, College of Science, University of Sulaimani, Sulaimanyah, Kurdistan Region, Iraq  
-2. Information Technology Department, Kurdistan Technical Institute, Sulaimanyah, Kurdistan Region, Iraq  
-**Contact:** `ramyar.teimoor@univsul.edu.iq`  
-**ORCID:** [0000-0002-7016-1833](https://orcid.org/0000-0002-7016-1833)
+**Authors:**
+1. **Ramyar A. Teimoor** (Corresponding Author) — *Department of Computer, College of Science, University of Sulaimani, Sulaimanyah, Iraq; and Information Technology Department, Kurdistan Technical Institute, Sulaimanyah, Iraq* (`ramyar.teimoor@univsul.edu.iq`) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--7016--1833-green.svg)](https://orcid.org/0000-0002-7016-1833)
+2. **Kardo O. Aziz** — *Department of Computer, College of Science, Charmo University, Chamchamal, Sulaimanyah, Iraq* (`kardo.othman@chu.edu.iq`) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4886--0504-green.svg)](https://orcid.org/0000-0003-4886-0504)
+3. **Tofiq A. Tofiq** — *Department of Computer, College of Science, University of Sulaimani, Sulaimanyah, Kurdistan Region, Iraq* (`tofiq.ahmad@univsul.edu.iq`) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6487--0406-green.svg)](https://orcid.org/0000-0002-6487-0406)
+4. **Dilman S. Abdulla** — *Department of Computer, College of Science, University of Halabja, Halabja, Kurdistan Region, Iraq* (`dilman.salih@uoh.edu.iq`) | [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--1254--5545-green.svg)](https://orcid.org/0000-0003-1254-5545)
 
 ---
 
