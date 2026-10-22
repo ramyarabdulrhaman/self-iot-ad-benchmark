@@ -21,6 +21,18 @@ This repository provides an **exact-duplicate-audited benchmark** comprising 17,
 
 ---
 
+## 📄 Publication Manuscript Overview
+
+The accompanying peer-reviewed research article is formatted in the official IEEE double-column format (`IEEEtran.cls`), targeting an initial 6–8 page budget:
+- **Target Manuscript Length:** 8 pages (IEEE double-column lettersize).
+- **Core Visual Figures:**
+  - **Figure 1:** Pipeline & Architecture Overview (`figures/fig1_self_iot_ad_architecture.png`)
+  - **Figure 2:** Empirical ROC and PR Curves on Held-Out RT-IoT2022 Test Telemetry (`figures/fig2_roc_and_pr_curves.png`)
+  - **Author Biographies & Portraits:** Embedded portrait photographs for all four co-authors in `figures/authors/`.
+- **Extended Evaluation Suite:** Complete 12-figure suite, 20-seed numerical logs, and INT8 edge quantization models are provided in this repository for full reproducibility.
+
+---
+
 ## 🏆 Key Empirical Findings (20-Repetition Suite)
 
 1. **Tree Ensembles Decisively Win Under Label Scarcity:** Non-parametric tree ensembles establish superior performance bounds on tabular flows. At 1% label budget (123 flows):
