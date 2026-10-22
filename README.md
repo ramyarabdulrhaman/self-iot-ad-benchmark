@@ -186,6 +186,18 @@ python code/generate_rich_figures_suite.py
 
 ---
 
+## 👥 Authors & Biographies
+
+| Author | Profile & Education |
+| :--- | :--- |
+| <img src="figures/authors/author_ramyar_teimoor.png" width="100" height="125" alt="Ramyar A. Teimoor"/> | **Ramyar A. Teimoor** (Corresponding Author, Member, IEEE)<br/>received the B.S. degree in Computer Science from the University of Sulaimani, Sulaymaniyah, in 2013, and the M.Sc. degree in Computer Science from the University of Sulaimani, Sulaymaniyah, in 2019. He is currently with the Department of Computer, College of Science, University of Sulaimani, and the Information Technology Department, Kurdistan Technical Institute, Sulaimanyah, Iraq.<br/>*Email:* `ramyar.teimoor@univsul.edu.iq` \| [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--7016--1833-green.svg)](https://orcid.org/0000-0002-7016-1833) |
+| <img src="figures/authors/author_kardo_aziz.png" width="100" height="125" alt="Kardo O. Aziz"/> | **Kardo O. Aziz**<br/>received the B.S. degree in Computer Science from the University of Sulaimani, Sulaymaniyah, in 2011, and the M.Sc. degree in Computer Science from Rochester Institute of Technology (RIT), New York, USA, in 2017. He is currently with the Department of Computer, College of Science, Charmo University, Chamchamal, Sulaimanyah, Iraq.<br/>*Email:* `kardo.othman@chu.edu.iq` \| [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4886--0504-green.svg)](https://orcid.org/0000-0003-4886-0504) |
+| <img src="figures/authors/author_tofiq_tofiq.png" width="100" height="125" alt="Tofiq A. Tofiq"/> | **Tofiq A. Tofiq**<br/>received the B.S. degree in Computer Science from the University of Sulaimani, Sulaymaniyah, in 2012, and the M.Sc. degree in Computer Science from the University of Sulaimani, Sulaymaniyah, in 2021. He is a senior academic researcher with the Department of Computer, College of Science, University of Sulaimani, Sulaimanyah, Kurdistan Region, Iraq.<br/>*Email:* `tofiq.ahmad@univsul.edu.iq` \| [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6487--0406-green.svg)](https://orcid.org/0000-0002-6487-0406) |
+| <img src="figures/authors/author_dilman_abdulla.png" width="100" height="125" alt="Dilman S. Abdulla"/> | **Dilman S. Abdulla**<br/>received the B.S. degree in Computer Science from the University of Sulaimani, Sulaymaniyah, in 2011, and the M.Sc. degree in Computer Science from the School of Computer Science, University of Birmingham, UK, in 2016. She is currently with the Department of Computer, College of Science, University of Halabja, Halabja, Kurdistan Region, Iraq.<br/>*Email:* `dilman.salih@uoh.edu.iq` \| [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--1254--5545-green.svg)](https://orcid.org/0000-0003-1254-5545) |
+
+---
+
 ## 📄 License
 
 This repository is licensed under the [MIT License](LICENSE).
+
