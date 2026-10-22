@@ -74,7 +74,8 @@ self-iot-ad-benchmark/
 │   ├── run_experiments.py             # Main multi-seed benchmark runner (11 architectures, 20 seeds)
 │   ├── run_extended_benchmarks.py     # Linear probe suite, unified ablations, INT8 dynamic quantization
 │   ├── statistical_analysis.py        # Wilcoxon signed-rank tests, Holm-Bonferroni corrections, d_z
-│   └── visualize_results.py           # Publication-grade chart generation (ROC/PR curves, ablations)
+│   ├── visualize_results.py           # Publication-grade chart generation (ROC/PR curves, ablations)
+│   └── generate_rich_figures_suite.py # Complete 12-figure suite generator (300 DPI PNG and vector PDF)
 ├── data/
 │   ├── raw/
 │   │   └── rt_iot2022_curated.csv     # Raw feature telemetry from RT-IoT2022
@@ -89,8 +90,41 @@ self-iot-ad-benchmark/
 │   │   └── self_iot_ad_int8.pt        # Post-training INT8 quantized checkpoint (48.6 KB)
 │   └── raw_predictions/               # Test set prediction vectors per seed
 ├── tables/                            # Verified experimental CSV tables
-└── figures/                           # High-resolution publication figures (PNG & PDF)
+└── figures/                           # Complete 12-figure suite (300 DPI PNG & vector PDF)
+    ├── fig1_self_iot_ad_architecture.png     # Rich picture system architecture overview
+    ├── fig2_roc_and_pr_curves.png            # ROC and PR curves on held-out test telemetry
+    ├── fig3_label_efficiency_curve.png       # Macro-F1 across 0.5% to 10% label budgets
+    ├── fig4_fpr_vs_recall_tradeoff.png       # Operational trade-off space across 11 models
+    ├── fig5_svd_latent_spectrum.png          # Singular value decay verifying non-collapse
+    ├── fig6_ablation_f1_and_fpr.png          # Factorial ablation showing teacher removal gain
+    ├── fig7_real_world_deployment.png        # Rich picture edge gateway and in-line mitigation
+    ├── fig8_rep_distribution_boxplots.png    # 20-seed boxplot distributions across models
+    ├── fig9_latency_vs_macro_f1_pareto.png   # Latency vs Macro-F1 Pareto frontier
+    ├── fig10_attack_category_breakdown.png   # Per-attack category detection rates
+    ├── fig11_feature_importance.png          # Continuous feature importance ranking
+    └── fig12_leakage_audit_comparison.png    # 76.06% raw vs 0.45% audited leakage comparison
 ```
+
+---
+
+## 🎨 Publication Figures Suite
+
+The repository contains the complete suite of **12 publication-grade figures** in both 300 DPI PNG and publication-ready vector PDF formats:
+
+| Fig | Artifact Filename | Description | Format |
+| :---: | :--- | :--- | :---: |
+| **1** | `fig1_self_iot_ad_architecture` | **Rich Picture:** System architecture with custom vector icons (IoT sensor, NetFlow, marginal dice, neural encoder, EMA momentum teacher, firewall shield) and PyTorch badges | PNG / PDF |
+| **2** | `fig2_roc_and_pr_curves` | Dual-panel ROC and Precision-Recall curves on held-out RT-IoT2022 test telemetry | PNG / PDF |
+| **3** | `fig3_label_efficiency_curve` | Downstream Macro-F1 scaling across supervision budgets (0.5% to 10.0%) | PNG / PDF |
+| **4** | `fig4_fpr_vs_recall_tradeoff` | Operational FPR versus Recall trade-off scatter landscape across 11 architectures | PNG / PDF |
+| **5** | `fig5_svd_latent_spectrum` | Normalized singular value decay ($\sigma_k/\sigma_1$) across 64 latent embedding dimensions | PNG / PDF |
+| **6** | `fig6_ablation_f1_and_fpr` | Factorial ablation bar chart with 20-seed error bars showing +7.49 pp gain without teacher | PNG / PDF |
+| **7** | `fig7_real_world_deployment` | **Rich Picture:** Real-world edge gateway deployment with eBPF XDP packet capture, ring buffers, RobustScaler, INT8 inference, and Linux Netfilter/iptables mitigation | PNG / PDF |
+| **8** | `fig8_rep_distribution_boxplots`| 20-seed box-and-whisker distribution plots with jittered data points across all 11 models | PNG / PDF |
+| **9** | `fig9_latency_vs_macro_f1_pareto`| Single-flow CPU inference latency versus downstream Macro-F1 Pareto frontier | PNG / PDF |
+| **10**| `fig10_attack_category_breakdown`| Granular detection recall across 12 RT-IoT2022 traffic categories (1% vs. 5% labels) | PNG / PDF |
+| **11**| `fig11_feature_importance` | Relative Gini feature importance ranking across the 21 continuous NetFlow features | PNG / PDF |
+| **12**| `fig12_leakage_audit_comparison`| Cross-partition duplicate leakage comparison: Raw (76.06%) vs. Audited (0.45%) | PNG / PDF |
 
 ---
 
@@ -143,12 +177,12 @@ Generate Holm-Bonferroni adjusted $p$-values and effect sizes:
 python code/statistical_analysis.py
 ```
 
-### 5. Generate Publication Figures
+### 5. Generate All 12 Publication Figures
 
-Render all ROC curves, PR curves, and ablation figures:
+Render the entire suite of 12 publication-grade figures (PNG and PDF):
 
 ```bash
-python code/visualize_results.py
+python code/generate_rich_figures_suite.py
 ```
 
 ---
